@@ -4,11 +4,14 @@
   "description": "Sample project for Postman, k6 and GitHub Actions",
   "main": "index.js",
   "scripts": {
-    "postman:tests": "newman run ./collections/Demo.postman_collection"
+    "postman:tests": "newman run ./collections/Demo.postman_collection",
+    "convert-to-k6": "postman-to-k6 ./collections/Demo.postman_collection -o k6-script.js",
+    "performance-tests": "k6 run k6-script.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@apideck/postman-to-k6": "^1.8.9",
     "newman": "^6.0.0"
   }
 }
