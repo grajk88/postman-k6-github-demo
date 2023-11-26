@@ -1,6 +1,6 @@
 # Sample project to demo the integration between Postman, k6 and GitHub Actions
 
-This project conatins sample code to demonstrate how Postman Collections are integrated into k6 to perform Load Testing with 50 virtual users. Also, it contains the github actions file to schedule the tests to trigger automatically on a scheduled timing.
+This project contains sample code to demonstrate how Postman Collections are integrated into k6 to perform Load Testing with 50 virtual users. Also, it contains the github actions file to schedule the tests to trigger automatically on a scheduled timing.
 
 ## Step-by-step Instruction
 
