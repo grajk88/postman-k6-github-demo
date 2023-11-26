@@ -1,0 +1,14 @@
+{
+  "name": "postman-k6-github-sample",
+  "version": "1.0.0",
+  "description": "Sample project for Postman, k6 and GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "postman:tests": "newman run ./collections/Demo.postman_collection"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^6.0.0"
+  }
+}
