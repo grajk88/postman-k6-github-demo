@@ -6,12 +6,13 @@
   "scripts": {
     "postman:tests": "newman run ./collections/Demo.postman_collection",
     "convert-to-k6": "postman-to-k6 ./collections/Demo.postman_collection -o k6-script.js",
-    "performance-tests": "k6 run k6-script.js"
+    "performance-tests": "k6 run k6-script.js --summary-trend-stats=\"avg,p(90),p(99.9),p(99.99),count\" --out json=test.csv"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@apideck/postman-to-k6": "^1.8.9",
+    "k6-html-reporter": "^0.0.6",
     "newman": "^6.0.0"
   }
 }
