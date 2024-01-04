@@ -13,7 +13,7 @@ postman[Symbol.for("initial")]({
 export default function() {
   postman[Request]({
     name: "GetUsers",
-    id: "057aa407-e786-44d7-b3ae-fb80ddb2b13d",
+    id: "f33dbd09-60e0-4649-adf3-22d1222f4ee7",
     method: "GET",
     address: "https://reqres.in/api/users?page=2",
     post(response) {
@@ -179,7 +179,7 @@ export default function() {
 
   postman[Request]({
     name: "CreateUser",
-    id: "ba8202f4-68bf-4e95-a7ba-4d7ef66bc780",
+    id: "8287c542-7050-4c4f-8717-05b7fafc346f",
     method: "POST",
     address: "https://reqres.in/api/users",
     data: '{\n    "name": "morpheus",\n    "job": "leader"\n}',
